@@ -19,6 +19,14 @@ const toys = [
   }
 ]
 
+const elmo = {
+    id: 4,
+    name: "Tickle me Elmo",
+    maker: "Fisher Price",
+    cost: 1000.00
+}
+toys.push(elmo)
+
 for (const toy of toys) {
     console.log(toy.name)
 }

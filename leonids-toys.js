@@ -12,4 +12,9 @@ const plasticScrewdriver = {
     Cost: 1.99
 }
 
-const 
+const lightBright = {
+    id: 3,
+    name: "Light Bright",
+    maker: "Hasbro",
+    cost: 10.00
+}

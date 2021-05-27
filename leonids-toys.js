@@ -19,20 +19,32 @@ const toys = [
   }
 ]
 
+const addToyToInventory = (toyObject) => {
+    const lastIndex = toys.length - 1
+    const currentLastToy = toys[lastIndex]
+    const maxId = currentLastToy.id
+    const idForNewToy = maxId + 1;
+
+    toyObject.id = idForNewToy
+
+    toys.push(toyObject)
+}
+
 const elmo = {
-    id: 4,
     name: "Tickle me Elmo",
     maker: "Fisher Price",
     cost: 1000.00
 }
 
 const pen = {
-    id: 5,
     name: "Toy Pen",
     maker: "Bic",
     cost: 1
 }
-toys.push(elmo, pen)
+
+/* toys.push(elmo, pen) */
+
+addToyToInventory(elmo, pen)
 
 for (const toy of toys) {
     toy.cost = toy.cost * 1.05

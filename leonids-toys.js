@@ -44,7 +44,8 @@ const pen = {
 
 /* toys.push(elmo, pen) */
 
-addToyToInventory(elmo, pen)
+addToyToInventory(elmo)
+addToyToInventory(pen)
 
 for (const toy of toys) {
     toy.cost = toy.cost * 1.05

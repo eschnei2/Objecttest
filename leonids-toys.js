@@ -30,6 +30,16 @@ const addToyToInventory = (toyObject) => {
     toys.push(toyObject)
 }
 
+const removeProduct = (toyId) => {
+    realId = toyId - 1 
+
+     toys.splice(realId,1) 
+
+    console.log(toys)
+
+
+}
+
 const elmo = {
     name: "Tickle me Elmo",
     maker: "Fisher Price",
@@ -42,7 +52,6 @@ const pen = {
     cost: 1
 }
 
-/* toys.push(elmo, pen) */
 
 addToyToInventory(elmo)
 addToyToInventory(pen)
@@ -51,3 +60,7 @@ for (const toy of toys) {
     toy.cost = toy.cost * 1.05
     console.log(`${toy.name} now costs ${toy.cost}`)
 }
+
+
+removeProduct(3)
+

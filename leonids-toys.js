@@ -64,3 +64,32 @@ for (const toy of toys) {
 
 removeProduct(3)
 
+const currentInventory = [
+    "Muscle Man",
+    "Dora the Scientist",
+    "Princess Sparkles",
+    "Perry Scope",
+    "Explorer Backpack",
+    "Space Scout Suit",
+    "Geology Mineral Dig Kit",
+    "Perry Scope"
+]
+
+const sellPerryScope = () => {
+
+    let availableForPurchase
+
+    for (const toy of currentInventory) {
+            availableForPurchase = false
+
+        if (toy === "Perry Scope") {
+            availableForPurchase = true
+        }
+    }
+
+    if (availableForPurchase) {
+        console.log("Enjoy your new Perry Scope")
+    }
+}
+
+sellPerryScope()
